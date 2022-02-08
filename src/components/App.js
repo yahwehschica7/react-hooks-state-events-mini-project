@@ -24,6 +24,8 @@ function App() {
   }
 
   const newCategoryArray = taskNewState.filter((task) => {
+    // (task) => selectedCategory === "All" || task.category === category
+    // )
     if (selectedCategory === "All") {
     return true
   } else {
@@ -36,11 +38,7 @@ function App() {
     setTaskNewState([...taskNewState, {text: text, category:category}])
   }
 
-  // function filterCategory() {
-  //   const filteredAll = CATEGORIES.filter(category => category !== "All")
-  //   return filteredAll
-  // }
-
+  
   return (
     <div className="App">
       <h2>My tasks</h2>

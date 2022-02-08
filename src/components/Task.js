@@ -1,7 +1,6 @@
 import React from "react";
 
 function Task({text, category, onDeleteTask }) {
-
   function deleteTasks() {
     onDeleteTask(text)
   }

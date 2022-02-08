@@ -2,11 +2,11 @@ import React from "react";
 import Task from "./Task";
 
 function TaskList({ tasks, deleteTasks }) {
-  const tasksArray = tasks.map((tasks) => {
+  const tasksArray = tasks.map((task) => {
     return <Task 
-      key={tasks.text} 
-      text={tasks.text} 
-      category={tasks.text}
+      key={task.text} 
+      text={task.text} 
+      category={task.text}
       onDeleteTask={deleteTasks}
       />
       })
